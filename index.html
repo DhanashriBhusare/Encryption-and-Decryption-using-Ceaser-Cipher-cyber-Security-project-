@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Encryption and Decryption</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Caesar Cipher Encryption and Decryption</h1>
+    <div class="container">
+        <div class="encrypt">
+            <h2>Encrypt</h2>
+            <form action="/encrypt" method="post">
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message">
+                <label for="shift">Shift:</label>
+                <input type="number" id="shift" name="shift">
+                <input type="submit" value="Encrypt">
+            </form>
+        </div>
+        <div class="decrypt">
+            <h2>Decrypt</h2>
+            <form action="/decrypt" method="post">
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message">
+                <label for="shift">Shift:</label>
+                <input type="number" id="shift" name="shift">
+                <input type="submit" value="Decrypt">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
